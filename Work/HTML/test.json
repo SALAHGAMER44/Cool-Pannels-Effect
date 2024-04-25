@@ -1,0 +1,9 @@
+{
+  "String": "SG",
+  "Number": 44,
+  "boolean": true,
+  "object": ["easy", 
+    "peasy", 
+    "lemon", 
+    "squeasy"]
+}

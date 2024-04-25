@@ -1,0 +1,55 @@
+* {
+  background-color: rgb(29, 29, 29);
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.img {
+  width: 19%;
+  height: 100vh;
+  background-size: 105% 105%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  filter: grayscale(80%);
+  transition: transform 0.3s ease, 
+              filter 0.4s ease, 
+              background-position 0.3s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+  align-items: center;
+}
+
+.img:hover {
+  background-position: 0 -1rem;
+  transform: translateY(-40px);
+  filter: none;
+}
+
+.title {
+  text-decoration: none;
+  color: azure;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: large;
+  width: 20%;
+  height: 40px;
+  position: relative;
+  top: 95%;
+  text-align: center;
+  visibility: hidden;
+}
+
+.img:hover > .title {
+  top: 100%;
+  visibility: visible;
+  overflow: hidden;
+}
+
